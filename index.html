@@ -5,41 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Application 2</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="#module1">Module 1</a></li>
-            <li><a href="#module2">Module 2</a></li>
-            <li><a href="#module3">Module 3</a></li>
-            <li><a href="#module4">Module 4</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="logo">WebApp2</div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#module1">Introduction</a></li>
+                <li><a href="#module2">Features</a></li>
+                <li><a href="#module3">About Us</a></li>
+                <li><a href="#module4">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <h1>Welcome to Web Application 2</h1>
+        <p>Your ultimate solution for modern web experiences.</p>
+        <a href="#module1" class="btn-primary">Get Started</a>
+    </section>
 
     <!-- Modules / Sections -->
-    <section id="module1">
-        <h1>Module 1: Introduction</h1>
-        <p>Welcome to Module 1. This is the introduction section.</p>
+    <section id="module1" class="module">
+        <h2>Module 1: Introduction</h2>
+        <p>This is the introduction to Web Application 2. Learn how it can help you build fast, interactive websites.</p>
     </section>
 
-    <section id="module2">
-        <h1>Module 2: Features</h1>
-        <p>Here we explain the features of Web Application 2.</p>
+    <section id="module2" class="module">
+        <h2>Module 2: Features</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>Fast</h3>
+                <p>Optimized for speed and performance.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Responsive</h3>
+                <p>Looks great on any device, big or small.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Customizable</h3>
+                <p>Easily adaptable for your needs.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Secure</h3>
+                <p>Built with security in mind.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="module3">
-        <h1>Module 3: About Us</h1>
-        <p>This section contains information about the team and project.</p>
+    <section id="module3" class="module">
+        <h2>Module 3: About Us</h2>
+        <p>We are a passionate team building modern web applications. Our mission is to provide elegant, performant, and user-friendly solutions.</p>
     </section>
 
-    <section id="module4">
-        <h1>Module 4: Contact</h1>
-        <p>Get in touch with us using the contact details below.</p>
-        <button id="contactBtn">Click Me</button>
+    <section id="module4" class="module">
+        <h2>Module 4: Contact</h2>
+        <p>Reach out to us via email or phone. We'd love to hear from you!</p>
+        <button id="contactBtn" class="btn-primary">Click Me</button>
         <p id="contactMsg"></p>
     </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Web Application 2. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
