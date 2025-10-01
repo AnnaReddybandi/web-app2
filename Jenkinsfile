@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('checkout Code'){
             steps{
-                git branch: 'main' , url: 'https://github.com/AnnaReddybandi/web-application2.git'
+                git branch: 'main' , url: 'https://github.com/AnnaReddybandi/web-app2.git'
             }
 
         }
